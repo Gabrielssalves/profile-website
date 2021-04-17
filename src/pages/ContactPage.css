@@ -1,0 +1,28 @@
+.contact-subtitle {
+    font-size: large;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-link {
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    height: 75px;
+    color: #fff;
+}
+
+.contact-link:hover {
+    color: rgb(233, 217, 0);    
+}
+
+.contact-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-card .contact-icon {
+    font-size: 35px;
+    margin: 0 15px;
+}
