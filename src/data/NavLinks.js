@@ -1,7 +1,7 @@
  export const NavLinksData = [
      {
          title: 'Home',
-         path: '/home'
+         path: '/'
      },
      {
          title: 'About Me',
