@@ -1,7 +1,7 @@
 import React from 'react'
 import './Page.css'
 
-export default (props) => {
+const Page = (props) => {
     return (
         <div className="page">
             <div className="page-header">
@@ -13,3 +13,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Page

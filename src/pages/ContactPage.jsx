@@ -4,7 +4,7 @@ import './ContactPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { ContactData } from '../data/ContactData'
 
-export default () => {
+const ContactPage = () => {
     const contacts = ContactData.map((item, index) => {
         return <a href={item.link} className="contact-link" key={index}>
                 <div className="contact-card">
@@ -23,3 +23,5 @@ export default () => {
         <Page header={<h1>Contact</h1>} body={body}></Page>
     )
 }
+
+export default ContactPage

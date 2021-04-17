@@ -1,7 +1,7 @@
 import React from 'react'
 import Page from '../components/Page'
 
-export default () => {
+const AboutPage = () => {
     return (
         <Page 
             header={<h1>About Me</h1>} 
@@ -17,3 +17,5 @@ export default () => {
         </Page>                
     )
 }
+
+export default AboutPage
