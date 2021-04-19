@@ -19,8 +19,7 @@
 }
 
 .page-body::-webkit-scrollbar {
-    background-color: rgba(233, 218, 0, 0.575);
-    border-color: rgb(233, 217, 0);
+    background-color: rgba(233, 217, 0, 0.575);
     border-radius: 20px;
     width: 5px;
 }
