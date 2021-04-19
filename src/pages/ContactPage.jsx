@@ -16,7 +16,9 @@ const ContactPage = () => {
 
     const body = <div className="body-content">
         <p className="contact-subtitle">You can find me at: </p>
-        {contacts}
+        <div className="contact-links">            
+            {contacts}
+        </div>
     </div>
 
     return (

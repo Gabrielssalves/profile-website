@@ -9,7 +9,8 @@
 .app {
   width: 100vw;
   height: 100vh;
-  background: rgb(39, 39, 39);
+  background: url(./assets/Desert.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +20,6 @@
 .app .page {
   width: 75vw;
   height: 67vh;
-  background: rgb(39, 39, 39);
   color: #fff;
   font-family: 'Raleway', sans-serif;
 }

@@ -1,0 +1,42 @@
+.about-content {
+    height: 100%;
+}
+
+.about-content .about-description {
+    height: 40%;
+}
+
+.tools {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.tools .tools-subtitle {
+    margin-top: 3rem;
+    font-size: large;
+    margin-left: 15px;
+}
+
+.tools .tools-information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tools .tools-information .tool-card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 125px;
+    height: 100px;
+}
+
+.tools .tools-information .tool-card .tool-icon {
+    font-size: 35px;
+}
