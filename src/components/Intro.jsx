@@ -26,7 +26,7 @@ const Intro = () => {
                         <span className="text">and i love</span>
                     </h1>
                     <h1 className="hide">
-                        <span className="text">coffe.</span>
+                        <span className="text">coffee.</span>
                     </h1>
                 </div>
             </div>
