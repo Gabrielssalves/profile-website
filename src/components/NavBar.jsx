@@ -6,15 +6,13 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { NavLinksData } from '../data/NavLinks.js'
 
 const NavBar = (props) => {
-    const [navActive, setNavActive] = useState(false);
-        
+    const [navActive, setNavActive] = useState(false); 
+    
     return (
         <React.Fragment>
             <nav>
-                <div className="logo">
-                    <h4>G.A.</h4>
-                </div>
-                <ul className={navActive ? 'nav-links active' : 'nav-links'}>
+                <ul className={navActive ? 'nav-links active' : 'nav-links'}
+                    style={navActive ? {animation: 'navLinkFadeBackgroundIn 1s ease forwards 0.5s'} : {animation: 'navLinkFadeBackgroundOut 0.3s ease backwards 0s'}}>                                 
                     {NavLinksData.map((item, index) => {
                         return <li 
                                     key={index} 
@@ -27,9 +25,12 @@ const NavBar = (props) => {
                     onClick={ () => setNavActive(!navActive)}>
                     <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
                 </div>
+                <div className="logo">
+                    <h4>G.A.</h4>
+                </div>
             </nav>
             <div className={navActive ? 'out-nav-links active' : 'out-nav-links'}
-                onClick={ ()=> {setNavActive(false)}}></div>
+                onClick={ ()=> {setNavActive(false)}}></div>            
         </React.Fragment>
     )
 }

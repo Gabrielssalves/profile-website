@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
 .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     height: 25%;
     opacity: 0;
     animation: fade 0.5s ease forwards 0.2s;
+    font-family: 'Playfair Display', serif;    
+    color: #fff;
 }
 
 .page-body {
