@@ -11,6 +11,7 @@ const Intro = () => {
         timeLine.to('.slider', { y: '-100%', duration: 1.5, delay: 0.5 })
         timeLine.to('.intro', { y: '-100%', duration: 1 }, "-=1.1")
         timeLine.fromTo('nav', { opacity: 0 }, { opacity: 1, duration: 1 })
+        timeLine.fromTo('.avatar', { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1")
         timeLine.fromTo('.page', { opacity: 0 }, { opacity: 1, duration: 1 })    
     })
 
