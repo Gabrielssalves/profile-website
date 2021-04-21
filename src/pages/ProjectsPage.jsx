@@ -4,7 +4,10 @@ import Page from '../components/Page'
 
 const ProjectsPage = () => {
     return (
-        <Page header={<h1><FormattedMessage id="Projects"/></h1>} body={<p><FormattedMessage id="ProjectBody"/></p>}></Page>                
+        <Page 
+            header={<h1><FormattedMessage id="Projects"/></h1>} 
+            body={<p><FormattedMessage id="ProjectBody"/></p>}>            
+        </Page>                
     )
 }
 

@@ -8,13 +8,13 @@ import { NavLinksData } from '../data/NavLinks.js'
 
 const NavBar = (props) => {
     const [navActive, setNavActive] = useState(false); 
-    const [selectedPage, setSelectedPage] = useState('/' + window.location.pathname.split('/')[2]);
-    
+    const [selectedPage, setSelectedPage] = useState('/' + (window.location.pathname.split('/')[2] ? window.location.pathname.split('/')[2] : ""));
+    console.log(selectedPage)
     return (
         <React.Fragment>
             <nav>
                 <ul className={navActive ? 'nav-links active' : 'nav-links'}
-                    onClick={(e) => setSelectedPage(e.target.pathname)}
+                    onClick={(e) => setSelectedPage('/' + e.target.pathname.split('/')[2])}
                     style={navActive ? {animation: 'navLinkFadeBackgroundIn 1s ease forwards 0.5s'} : {animation: 'navLinkFadeBackgroundOut 0.3s ease backwards 0s'}}>                                 
                     {NavLinksData.map((item, index) => {
                         return <li 
