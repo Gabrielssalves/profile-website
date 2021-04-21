@@ -1,28 +1,26 @@
 import './App.css';
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
+import Routes from './Routes'
+import IntlProviderConfigured from './i18n/IntlProviderConfigured'
 import Avatar from './components/Avatar'
 import NavBar from './components/NavBar'
 import Intro from './components/Intro'
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage'
-import ProjectPage from './pages/ProjectsPage'
-import ContactPage from './pages/ContactPage'
+import LanguagesControl from './components/LanguageControl'
+
 
 function App() {
   return (
     <div className="app">
       <Avatar></Avatar>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={HomePage}></Route>
-          <Route path="/about" exact component={AboutPage}></Route>
-          <Route path="/projects" exact component={ProjectPage}></Route>
-          <Route path="/contact" exact component={ContactPage}></Route>
-        </Switch>
-        <NavBar></NavBar>
-      </Router>
-      <Intro></Intro>      
+      <IntlProviderConfigured>
+        <Router>
+          <LanguagesControl></LanguagesControl>
+          <Routes/>
+          <NavBar></NavBar>
+        </Router>        
+        <Intro></Intro>   
+      </IntlProviderConfigured>   
     </div>
   );
 }

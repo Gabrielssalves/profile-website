@@ -1,9 +1,10 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import Page from '../components/Page'
 
 const ProjectsPage = () => {
     return (
-        <Page header={<h1>Project</h1>} body={<p>Working on it!</p>}></Page>                
+        <Page header={<h1><FormattedMessage id="Projects"/></h1>} body={<p><FormattedMessage id="ProjectBody"/></p>}></Page>                
     )
 }
 

@@ -1,0 +1,51 @@
+{
+    "en-US": {        
+        "Home": "Home",
+        "About Me": "About Me",
+        "Projects": "Projects",
+        "Contact": "Contact",
+        "AboutDescription1": "I'm a developer passionate about technology based in São Paulo.",
+        "AboutDescription2": "I have been involved in the area about four years, looking for professional development and contributing to the growth of the companies which I work.",
+        "AboutDescription3": "My interests are back-end development, full stack development and data engineering.",
+        "AboutDescriptionAbilities": "Abilities:",
+        "HomeBody": "Hello, my name's Gabriel Alves and welcome to my website!",
+        "ContactSubTitle": "You can find me at: ",
+        "IntroText1": "I'm a developer",
+        "IntroText2": "and i love",
+        "IntroText3": "coffe.",
+        "ProjectBody": "Working on it!"
+        
+    },
+    "pt-BR": {
+        "Home": "Home",
+        "About Me": "Sobre Mim",  
+        "Projects": "Projetos",
+        "Contact": "Contato",
+        "AboutDescription1": "Sou um desenvolvedor apaixonado por tecnologia situado em São Paulo.",
+        "AboutDescription2": "Há quatro anos envolvido na área, buscando evolução profissional e contribuindo para o crescimento das empresas em que trabalho.",
+        "AboutDescription3": "Meus interesses são desenvolvimento back-end, desenvolvimento full stack e engenharia de dados.",
+        "AboutDescriptionAbilities": "Abilidades:",
+        "HomeBody": "Olá, meu nome é Gabriel Alves e seja bem vindo ao meu website!",
+        "ContactSubTitle": "Você pode me encontrar em: ",
+        "IntroText1": "Sou um desenvolvedor",
+        "IntroText2": "e eu amo",
+        "IntroText3": "café.",
+        "ProjectBody": "Trabalhando na implementação desta página!"
+    },
+    "es-ES": {
+        "Home": "Home",
+        "About Me": "Sobre Mi",
+        "Projects": "Proyectos",
+        "Contact": "Contacto",
+        "AboutDescription1": "Soy un programador apasionado por la tecnología con base en São Paulo.",
+        "AboutDescription2": "He estado involucrado en el área cerca de cuatro años, buscando el desarrollo profesional y contribuyendo al crecimiento de las empresas en las que trabajo.",
+        "AboutDescription3": "Mis intereses son el back-end, el full stack e ingeniería de datos.",
+        "AboutDescriptionAbilities": "Habilidades:",
+        "HomeBody": "Hola, mi nombre es Gabriel Alves y ¡bienvenido a mi website!",
+        "ContactSubTitle": "Puedes encontrarme en: ",
+        "IntroText1": "Soy un programador",
+        "IntroText2": "y yo amo",
+        "IntroText3": "café.",
+        "ProjectBody": "¡Trabajando en la implementación de esta página!"
+    }
+}

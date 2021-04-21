@@ -1,4 +1,4 @@
- export const NavLinksData = [
+export const NavLinksData = [
      {
          title: 'Home',
          path: '/'

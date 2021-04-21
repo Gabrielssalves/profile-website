@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import Page from '../components/Page'
 import './AboutPage.css'
 import { ToolsData } from '../data/ToolsData'
@@ -6,14 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const AboutPage = () => {
     const description = <div className="about-description">
-        <p>I'm a developer passionate about technology based in São Paulo.</p> 
-        <p>
-            I have been involved in the area about four years, looking for professional development and contributing to the growth of the companies which I work.
-        </p>
-        <p>My interests are back-end development, full stack development and data engineering.</p>
+        <p><FormattedMessage id="AboutDescription1"/></p> 
+        <p><FormattedMessage id="AboutDescription2"/></p> 
+        <p><FormattedMessage id="AboutDescription3"/></p> 
     </div>
     const tools = <div className="tools">
-        <p className="tools-subtitle">Abilities:</p>
+        <p className="tools-subtitle"><FormattedMessage id="AboutDescriptionAbilities"/></p>
         <div className="tools-information">
             {ToolsData.map((item, index) => {
                 return <div className="tool-card" key={index}>                    
@@ -30,7 +29,7 @@ const AboutPage = () => {
 
     return (
         <Page 
-            header={<h1>About Me</h1>} 
+            header={<h1><FormattedMessage id="About Me"/></h1>} 
             body={body}>        
         </Page>                
     )

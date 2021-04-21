@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FormattedMessage } from 'react-intl'
 import {Link} from 'react-router-dom'
 import './NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,17 +8,21 @@ import { NavLinksData } from '../data/NavLinks.js'
 
 const NavBar = (props) => {
     const [navActive, setNavActive] = useState(false); 
+    const [selectedPage, setSelectedPage] = useState('/' + window.location.pathname.split('/')[2]);
     
     return (
         <React.Fragment>
             <nav>
                 <ul className={navActive ? 'nav-links active' : 'nav-links'}
+                    onClick={(e) => setSelectedPage(e.target.pathname)}
                     style={navActive ? {animation: 'navLinkFadeBackgroundIn 1s ease forwards 0.5s'} : {animation: 'navLinkFadeBackgroundOut 0.3s ease backwards 0s'}}>                                 
                     {NavLinksData.map((item, index) => {
                         return <li 
-                                    key={index} 
+                                    key={index}
                                     style={navActive ? {animation: `navLinkFadeIn 1s ease forwards ${index / 7 + 0.1}s`} : {animation: `navLinkFadeOut 0s ease backwards ${(NavLinksData.length - index - 1) / 7}s`}}>
-                                    <Link to={item.path}>{item.title}</Link>
+                                    <Link
+                                    style={selectedPage === item.path ? {color: "rgb(233, 217, 0)"} : {}} 
+                                    to={'/' + window.location.pathname.split('/')[1] + item.path}><FormattedMessage id={item.title}/></Link>
                                 </li>
                     })}
                 </ul>

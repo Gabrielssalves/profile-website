@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import Page from '../components/Page'
 import './ContactPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,14 +16,14 @@ const ContactPage = () => {
     })
 
     const body = <div className="body-content">
-        <p className="contact-subtitle">You can find me at: </p>
+        <p className="contact-subtitle"><FormattedMessage id="ContactSubTitle"/></p>
         <div className="contact-links">            
             {contacts}
         </div>
     </div>
 
     return (
-        <Page header={<h1>Contact</h1>} body={body}></Page>
+        <Page header={<h1><FormattedMessage id="Contact"/></h1>} body={body}></Page>
     )
 }
 
